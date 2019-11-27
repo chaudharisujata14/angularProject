@@ -1,0 +1,20 @@
+
+<form #myForm = "ngForm" (ngSubmit)="onRegister(myForm)">
+    <legend>Add Record</legend>
+    <div class="form-group">
+        <label for="No">No</label>
+        <input ngModel type="text" class="form-control" id="No" placeholder="Enter No" name="No">
+    </div>
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input ngModel type="text" class="form-control" id="Name" placeholder="Enter Name" name="Name">
+    </div>
+    <div class="form-group">
+        <label for="Age">Age</label>
+        <input ngModel type="text" class="form-control" id="Age" placeholder="Enter Age" name="Age">
+    </div>
+    <button type="submit" class="btn btn-primary">Add Record</button>
+    <button type="button" class="btn btn-success" (click)="goToHome()">Go to Home</button>
+    <br>
+    <span class="label label-warning">{{msg}}</span>
+</form>
